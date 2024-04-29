@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>AgroPredict - Grapes</title>
+		<link rel="stylesheet" type = "text/css" href="{{ url_for('static', filename='styles/hacksoil2.css') }}">
+	</head>
+
+	<body background = "{{ url_for("static", filename = "images/grapes.jpg")}}">
+		<div class="navigation">
+			<ul>
+				<li><a style = "text-decoration:none; color:white;" href="{{ url_for('croppred')}}">Predict Crop </a></li>
+				<li><a style = "text-decoration:none; color:white;" href="{{ url_for('transit')}}">Home </a></li>
+			</ul>
+		</div>
+		<div id="mySidebar" class="sidebar">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+			<a href="{{ url_for('apple')}}"> Apple</a>
+			<a href="{{ url_for('banana')}}"> Banana</a>
+			<a href="{{ url_for('black')}}"> Black Gram</a>
+			<a href="{{ url_for('chickpea')}}"> Chickpea</a>
+			<a href="{{ url_for('coconut')}}"> Coconut</a>
+			<a href="{{ url_for('coffee')}}"> Coffee</a>
+			<a href="{{ url_for('cotton')}}"> Cotton</a>
+			<a href="{{ url_for('grapes')}}"> Grapes</a>
+			<a href="{{ url_for('jute')}}"> Jute</a>
+			<a href="{{ url_for('kidney')}}"> Kidney Beans</a>
+			<a href="{{ url_for('lentil')}}"> Lentil</a>
+			<a href="{{ url_for('maize')}}"> Maize</a>
+			<a href="{{ url_for('mango')}}"> Mango</a>
+			<a href="{{ url_for('moth')}}"> Moth Beans</a>
+			<a href="{{ url_for('mung')}}"> Mung Beans</a>
+			<a href="{{ url_for('musk')}}"> Muskmelon</a>
+			<a href="{{ url_for('orange')}}"> Orange</a>
+			<a href="{{ url_for('pawpaw')}}"> Pawpaw</a>
+			<a href="{{ url_for('pigeon')}}"> Pigeon Pea</a>
+			<a href="{{ url_for('pome')}}"> Pomegranate</a>
+			<a href="{{ url_for('rice')}}"> Rice</a>
+			<a href="{{ url_for('water')}}"> Watermelon</a>
+		  </div>
+		  <div id="main">
+			<button class="openbtn" onclick="openNav()">☰ Check Crops</button>  
+		  </div>			
+        
+		<div class="part1">
+		<div class = "main">
+			<h1> Grapes </h1>
+			<table>
+				<div id = "name">
+					<tr> 
+						<td  style = "width: 250px"><h2 class = "name">Nitrogen value: </h2></td>
+						<td class = "name"> 23.18</td>
+					
+					</tr>
+					<tr> 
+						<td><h2 class = "name">Phosphorus value: </h2></td>
+						<td class = "name">132.53</td>
+					</tr>
+					<tr> 
+						<td><h2 class = "name">Potassium value: </h2></td>
+						<td class = "name">200.11</td>
+					</tr>
+					<tr> 
+						<td><h2 class = "name">Soil Temperature: </h2></td>
+						<td class = "name">23.849575120049998 ℃</td>
+					</tr>
+					<tr> 
+						<td><h2 class = "name"> Soil Humidity: </h2></td>
+						<td class = "name"> 81.8752275212 mmHg</td>
+					</tr>
+					<tr> 
+						<td><h2 class = "name"> Soil pH value: </h2></td>
+						<td class = "name">6.0259366811</td>
+					</tr>
+					<tr> 
+						<td><h2 class = "name"> Average Rainfall: </h2></td>
+						<td class = "name">69.611828886 mm</td>
+					</tr>
+				</div>
+			</table>
+		</div>
+	</div>
+		<div class="part2">
+			<div class="main2">
+								
+				<strong>Botanical Information:</strong><br>
+				Scientific Name: Vitis vinifera<br>
+				Family: Vitaceae<br>
+				Genus: Vitis<br><br>
+
+				<strong>Growth and Appearance</strong><br>
+				Grapevines are deciduous woody vines that can climb or spread horizontally. They have lobed leaves and produce clusters of small, spherical fruits known as grapes. Grapevine stems are often used for wine production.<br><br>
+	
+				<strong>Flowering and Fruiting</strong><br>
+				Grapevines produce small, greenish flowers that develop into clusters of grapes. Grapes come in various colors, including red, green, and purple, depending on the grape variety.<br><br>
+	
+				<strong>Cultivation</strong><br>
+				Grapes are cultivated in vineyards worldwide, with specific varieties suited to different climates. They require well-drained soil, sunlight, and proper care, including pruning and trellising, to ensure healthy growth and fruiting.<br><br>
+	
+				<strong>Varieties</strong><br>
+				There are numerous grape varieties, each with unique characteristics. Common types include Cabernet Sauvignon, Chardonnay, Merlot, and many others, each favored for winemaking or consumption as table grapes.<br><br>
+	
+				<strong>Culinary and Beverage Uses</strong><br>
+				Grapes are consumed fresh as table grapes and are a key ingredient in various culinary dishes. They are also used to produce a wide range of grape-based products, including wines, juices, jams, and raisins.<br><br>
+	
+				<strong>Commercial Importance</strong><br>
+				Grapes, especially those used in winemaking, are economically significant. The wine industry, in particular, contributes to global trade, tourism, and cultural heritage.
+	
+	
+				
+			</div>
+		</div>
+		<script>
+			function openNav() {
+			  document.getElementById("mySidebar").style.width = "250px";
+			  document.getElementById("main").style.marginLeft = "250px";
+			}
+			
+			function closeNav() {
+			  document.getElementById("mySidebar").style.width = "0";
+			  document.getElementById("main").style.marginLeft= "0";
+			}
+			</script>	
+		</body>
+
+</html>

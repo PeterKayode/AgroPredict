@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-position: center;
+	background-size: cover;
+    background-color: #d0ddc4;
+    background-blend-mode: soft-light;
+  }
+  
+  .container {
+    display: flex;
+    align-items: center;
+    margin-left: 15%;
+    height: 80vh; 
+    padding: 0px;
+  }
+  
+  img {
+    width: 450px;
+    height: 350px;
+    margin-right: 150px;
+    /* border: 8px solid #00FF00; */
+    border-radius: 8px;
+    transform: skewY(-2deg);
+    animation: enlargeReduce 3s infinite alternate;
+    box-shadow: 0 4px 8px rgba(10, 0, 0, 10);
+  
+  }
+  
+  form {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    animation: slideIn 2s ease-out;
+  }
+  @keyframes slideIn {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+
+  label, input, button {
+    display: block;
+    margin-bottom: 10px;
+  }
+  ul{
+    list-style-type: none;
+    overflow: hidden;
+	  margin-top: 15px;
+    margin-right: 100px;
+}
+.navigation li{
+    float: right;
+}
+.navigation li a{
+    padding: 10px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+	  font-weight: bold;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    display: block;
+	  background-color: #00FF00;
+    border-radius: 9px;
+    margin-left: 10px;
+}
+.navigation a:hover{
+	border: 2px solid white;
+	background-color: #00FF00;
+	font-family: sans-serif;
+	font-weight: bold;
+	font-size: 11pt;
+	border-radius: 9px;
+}
+
+
+
+.input-group{
+  top: 180px;
+  width: 280px;
+
+}
+.input-field{
+  width: 100%;
+  padding: 10px 7px;
+  margin: 10px 0;
+  border: 1px solid #7f7d7d;
+  border-radius: 5px;
+  outline: none;
+  background: white;
+  
+}
+.submit-btn{
+  width: 85%;
+  padding: 10px 30px;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+  margin-top: 15px;
+  background: linear-gradient(to right, rgb(210, 137, 82),#00FF00);
+  border: 0px solid #ff61241f;
+  outline: none;
+  border-radius: 30px;
+  color: white;
+  font-size: 15px;
+	font-weight: bold;
+}
+
+textarea{
+  height: 70px;
+  border-radius: 5px;
+  width: 290px;
+}

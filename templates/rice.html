@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>AgroPredict - Rice</title>
+		<link rel="stylesheet" type = "text/css" href="{{ url_for('static', filename='styles/hacksoil2.css') }}">
+	</head>
+
+	<body background = "{{ url_for("static", filename = "images/rice.jpg")}}">
+		<div class="navigation">
+			<ul>
+				<li><a style = "text-decoration:none; color:white;" href="{{ url_for('croppred')}}">Predict Crop </a></li>
+				<li><a style = "text-decoration:none; color:white;" href="{{ url_for('transit')}}">Home </a></li>
+			</ul>
+		</div>			
+		<div id="mySidebar" class="sidebar">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+			<a href="{{ url_for('apple')}}"> Apple</a>
+			<a href="{{ url_for('banana')}}"> Banana</a>
+			<a href="{{ url_for('black')}}"> Black Gram</a>
+			<a href="{{ url_for('chickpea')}}"> Chickpea</a>
+			<a href="{{ url_for('coconut')}}"> Coconut</a>
+			<a href="{{ url_for('coffee')}}"> Coffee</a>
+			<a href="{{ url_for('cotton')}}"> Cotton</a>
+			<a href="{{ url_for('grapes')}}"> Grapes</a>
+			<a href="{{ url_for('jute')}}"> Jute</a>
+			<a href="{{ url_for('kidney')}}"> Kidney Beans</a>
+			<a href="{{ url_for('lentil')}}"> Lentil</a>
+			<a href="{{ url_for('maize')}}"> Maize</a>
+			<a href="{{ url_for('mango')}}"> Mango</a>
+			<a href="{{ url_for('moth')}}"> Moth Beans</a>
+			<a href="{{ url_for('mung')}}"> Mung Beans</a>
+			<a href="{{ url_for('musk')}}"> Muskmelon</a>
+			<a href="{{ url_for('orange')}}"> Orange</a>
+			<a href="{{ url_for('pawpaw')}}"> Pawpaw</a>
+			<a href="{{ url_for('pigeon')}}"> Pigeon Pea</a>
+			<a href="{{ url_for('pome')}}"> Pomegranate</a>
+			<a href="{{ url_for('rice')}}"> Rice</a>
+			<a href="{{ url_for('water')}}"> Watermelon</a>
+		  </div>
+		  <div id="main">
+			<button class="openbtn" onclick="openNav()">☰ Check Crops</button>  
+		  </div>
+        
+		<div class = "part1">	
+		<div class = "main">
+			<h1> Rice </h1>
+			<table>
+				<div id = "name">
+					<tr> 
+						<td  style = "width: 250px"><h2 class = "name">Nitrogen value: </h2></td>
+						<td class = "name"> 79.89</td>
+					
+					</tr>
+					<tr> 
+						<td><h2 class = "name">Phosphorus value: </h2></td>
+						<td class = "name">47.58</td>
+					</tr>
+					<tr> 
+						<td><h2 class = "name">Potassium value: </h2></td>
+						<td class = "name">39.87</td>
+					</tr>
+					<tr> 
+						<td><h2 class = "name">Soil Temperature: </h2></td>
+						<td class = "name">23.6893322105 ℃</td>
+					</tr>
+					<tr> 
+						<td><h2 class = "name"> Soil Humidity: </h2></td>
+						<td class = "name"> 82.2728215389 mmHg</td>
+					</tr>
+					<tr> 
+						<td><h2 class = "name"> Soil pH value: </h2></td>
+						<td class = "name">6.42547092214</td>
+					</tr>
+					<tr> 
+						<td><h2 class = "name"> Average Rainfall: </h2></td>
+						<td class = "name">236.181113594 mm</td>
+					</tr>
+				</div>
+			</table>
+		</div>
+	</div>
+		<div class="part2">
+			<div class="main2">
+								
+				<strong>Botanical Information:</strong><br>
+				Scientific Name: Oryza sativa (Asian rice) or Oryza glaberrima (African rice)<br>
+				Family: Poaceae<br>
+				Genus: Oryza<br><br>
+
+				<strong>Growth and Appearance</strong><br>
+				Rice is an annual grass that typically grows 2 to 6 feet tall, depending on the variety. It has long, slender leaves and produces a cluster of flowers that develop into grains. The grains are enclosed in husks and can vary in color, including white, brown, black, or red, depending on the type of rice.<br><br>
+	
+				<strong>Flowering and Seed Production</strong><br>
+				Rice plants produce flowers in the form of a panicle or spikelet. The flowers are wind-pollinated, and once fertilized, they develop into rice grains. The grains are the edible seeds of the rice plant and are harvested for consumption.<br><br>
+	
+				<strong>Cultivation</strong><br>
+				Rice is a staple food crop cultivated in flooded fields or paddies. It requires warm temperatures, high humidity, and sufficient water for cultivation. There are two main types of rice: indica, grown in tropical regions, and japonica, grown in temperate regions.<br><br>
+	
+				<strong>Varieties</strong><br>
+				There are numerous varieties of rice, each adapted to specific growing conditions and culinary preferences. Common types include long-grain, medium-grain, and short-grain rice, each with distinct characteristics.<br><br>
+	
+				<strong>Culinary Uses</strong><br>
+				Rice is a versatile staple consumed globally. It is a primary ingredient in a wide range of dishes, including pilaf, risotto, sushi, and various rice-based desserts. The cooking method and rice variety influence the texture and flavor of the cooked rice.<br><br>
+	
+				
+			</div>
+		</div>
+		<script>
+			function openNav() {
+			  document.getElementById("mySidebar").style.width = "250px";
+			  document.getElementById("main").style.marginLeft = "250px";
+			}
+			
+			function closeNav() {
+			  document.getElementById("mySidebar").style.width = "0";
+			  document.getElementById("main").style.marginLeft= "0";
+			}
+			</script>
+			</body>
+
+</html>

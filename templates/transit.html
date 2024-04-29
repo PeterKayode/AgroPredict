@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Welcome - AgroPredict</title>
+		<link rel="stylesheet" type = "text/css" href="{{ url_for('static', filename='styles/transit.css') }}">
+	</head>
+
+	<body background = "{{ url_for("static", filename = "images/Agric_5.jpeg")}}">
+        <div class="navigation">
+			<ul>
+                <li><a style = "text-decoration:none; color:black;" href="{{ url_for('register')}}">Logout </a></li>
+				<li><a style = "text-decoration:none; color:black;" href="{{ url_for('about')}}">About </a></li>
+                <li><a style = "text-decoration:none; color:black;" href="{{ url_for('transit')}}">Home </a></li>
+			</ul>
+		</div>
+        <div class="set4">
+            <div class="contain">
+                <img src="{{ url_for('static', filename='images/Agric_1.jpeg') }}" alt="Predict crop" height="200px">
+                <p> Boost your harvest! <br>Our tool predicts the best crops for your field using advanced Machine Learning. Maximize yield with precision planting. Try it now for smarter farming.</p>
+                <button class = "start"> <a style = "text-decoration:none; color:black;" href="{{ url_for('croppred')}}">Predict Crop </a></button>
+
+
+            </div>
+            <div class="contain">
+                <img src="{{ url_for('static', filename='images/Agric_3.jpeg') }}" alt="Disease Predict" height="200px">
+                <p> Stay ahead of crop diseases! <br>Our tool predicts potential issues, safeguarding your harvest. Leverage data-driven insights to protect your crops. Try now for proactive farming.
+
+
+                </p>
+                <button class = "start"> <a style = "text-decoration:none; color:black;" href="{{ url_for('diseasepred')}}">Predict Disease </a></button>
+
+                
+            </div>
+            <div class="contain">
+                <img src="{{ url_for('static', filename='images/Agric_2.jpeg') }}" alt="Fertilizer Recommendation" height="200px">
+                <p> Enhance crop nutrition! <br>Our tool recommends the perfect fertilizer blend for optimal growth. Tailor your soil treatment for a bountiful harvest. Try now for healthier crops.</p>
+                <button class = "start"> <a style = "text-decoration:none; color:black;" href="{{ url_for('fertilizerpred')}}">Recommend Fertilizer </a></button>
+                
+            </div>
+            <div class="contain">
+                <img src="{{ url_for('static', filename='images/Agric_4.jpeg') }}" alt="Chat us" height="200px">
+                <p> Need assistance? <br>Chat with us in real-time. Our experts are ready to help. Connect instantly for personalized support and quick answers. Start chatting now.</p>
+                <button class = "start"> <a style = "text-decoration:none; color:black;" href="{{ url_for('chatus')}}">Chat with us </a></button>
+
+                
+            </div>
+        </div>
+
+
+
+	</body>
+
+</html>

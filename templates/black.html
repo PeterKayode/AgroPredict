@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>AgroPredict - Black Gram</title>
+		<link rel="stylesheet" type = "text/css" href="{{ url_for('static', filename='styles/hacksoil2.css') }}">
+	</head>
+
+	<body background = "{{ url_for("static", filename = "images/black.jpg")}}">
+		<div class="navigation">
+			<ul>
+				<li><a style = "text-decoration:none; color:white;" href="{{ url_for('croppred')}}">Predict Crop </a></li>
+				<li><a style = "text-decoration:none; color:white;" href="{{ url_for('transit')}}">Home </a></li>
+			</ul>
+		</div>
+		<div id="mySidebar" class="sidebar">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+			<a href="{{ url_for('apple')}}"> Apple</a>
+			<a href="{{ url_for('banana')}}"> Banana</a>
+			<a href="{{ url_for('black')}}"> Black Gram</a>
+			<a href="{{ url_for('chickpea')}}"> Chickpea</a>
+			<a href="{{ url_for('coconut')}}"> Coconut</a>
+			<a href="{{ url_for('coffee')}}"> Coffee</a>
+			<a href="{{ url_for('cotton')}}"> Cotton</a>
+			<a href="{{ url_for('grapes')}}"> Grapes</a>
+			<a href="{{ url_for('jute')}}"> Jute</a>
+			<a href="{{ url_for('kidney')}}"> Kidney Beans</a>
+			<a href="{{ url_for('lentil')}}"> Lentil</a>
+			<a href="{{ url_for('maize')}}"> Maize</a>
+			<a href="{{ url_for('mango')}}"> Mango</a>
+			<a href="{{ url_for('moth')}}"> Moth Beans</a>
+			<a href="{{ url_for('mung')}}"> Mung Beans</a>
+			<a href="{{ url_for('musk')}}"> Muskmelon</a>
+			<a href="{{ url_for('orange')}}"> Orange</a>
+			<a href="{{ url_for('pawpaw')}}"> Pawpaw</a>
+			<a href="{{ url_for('pigeon')}}"> Pigeon Pea</a>
+			<a href="{{ url_for('pome')}}"> Pomegranate</a>
+			<a href="{{ url_for('rice')}}"> Rice</a>
+			<a href="{{ url_for('water')}}"> Watermelon</a>
+		  </div>
+		  <div id="main">
+			<button class="openbtn" onclick="openNav()">☰ Check Crops</button>  
+		  </div>
+						
+		<div class="part1">
+			<div class = "main">
+				<h1> Black Gram </h1>
+				<table>
+					<div id = "name">
+						<tr> 
+							<td  style = "width: 250px"><h2 class = "name">Nitrogen value: </h2></td>
+							<td class = "name"> 40.02</td>
+						
+						</tr>
+						<tr> 
+							<td><h2 class = "name">Phosphorus value: </h2></td>
+							<td class = "name">67.47</td>
+						</tr>
+						<tr> 
+							<td><h2 class = "name">Potassium value: </h2></td>
+							<td class = "name">19.24</td>
+						</tr>
+						<tr> 
+							<td><h2 class = "name">Soil Temperature: </h2></td>
+							<td class = "name">29.9733396789 ℃</td>
+						</tr>
+						<tr> 
+							<td><h2 class = "name"> Soil Humidity: </h2></td>
+							<td class = "name"> 65.1184255887 mmHg</td>
+						</tr>
+						<tr> 
+							<td><h2 class = "name"> Soil pH value: </h2></td>
+							<td class = "name">7.13395162948</td>
+						</tr>
+						<tr> 
+							<td><h2 class = "name"> Average Rainfall: </h2></td>
+							<td class = "name">67.8841511832 mm</td>
+						</tr>
+					</div>
+				</table>
+			</div>
+		</div>
+		<div class="part2">
+			<div class="main2">
+				<strong>Botanical Information:</strong><br>
+				Scientific Name: Phaseolus vulgaris<br>
+				Family: Fabaceae<br>
+				Genus: Phaseolus<br><br>
+				<strong>Growth and Appearance</strong><br>
+				Black bean plants are annuals, reaching a height of about 2 feet. They have compound leaves with three leaflets and produce pods containing black beans.<br><br>
+	
+				<strong>Flowering and Fruiting</strong><br>
+				Black bean plants produce small, white to violet flowers that develop into pods containing mature black beans. The beans are typically harvested when the pods dry.<br><br>
+	
+				<strong>Cultivation</strong><br>
+				Black beans are cultivated worldwide and thrive in warm climates. They are planted as seeds, and proper care includes well-drained soil and sufficient sunlight.<br><br>
+	
+				<strong>Varieties</strong><br>
+				There are various varieties of black beans, including Black Turtle beans and others, each with its unique characteristics.<br><br>
+	
+				<strong>Culinary Uses</strong><br>
+				Black beans are a versatile ingredient used in a variety of culinary dishes. They are commonly used in soups, stews, salads, and as a side dish.<br><br>
+	
+				<strong>Health Benefits</strong><br>
+				Black beans are a good source of protein, fiber, vitamins, and minerals. They are associated with heart health, weight management, and providing essential nutrients.
+			</div>
+		</div>
+
+		<script>
+			function openNav() {
+			  document.getElementById("mySidebar").style.width = "250px";
+			  document.getElementById("main").style.marginLeft = "250px";
+			}
+			
+			function closeNav() {
+			  document.getElementById("mySidebar").style.width = "0";
+			  document.getElementById("main").style.marginLeft= "0";
+			}
+			</script>
+	</body>
+
+</html>

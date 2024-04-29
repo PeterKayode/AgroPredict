@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type = "text/css" href="{{ url_for('static', filename='styles/diseasepred.css') }}">
+  <title>Disease - AgroPredict</title>
+</head>
+<body background = "{{ url_for("static", filename = "images/disease.jpeg")}}">
+  <div class="navigation">
+    <ul>
+      <li><a style = "text-decoration:none; color:black;" href="{{ url_for('register')}}">Logout </a></li>
+      <li><a style = "text-decoration:none; color:black;" href="{{ url_for('about')}}">About </a></li>
+      <li><a style = "text-decoration:none; color:black;" href="{{ url_for('transit')}}">Home </a></li>
+    </ul>
+  </div>
+
+  <div class="container">
+    <img src="{{ url_for('static', filename='images/disease.jpeg') }}" alt="Chat us">
+
+    <form id="register" class="input-group">
+      <input type="text" class="input-field" placeholder="Name of Plant" required>
+      <input type="text" class="input-field" placeholder="Specific symptoms" required>
+      <input type="text" class="input-field" placeholder="Location of infection" required>
+      <input type="text" class="input-field" placeholder="Environmental condititon" required>
+      <input type="text" class="input-field" placeholder="Neighboring crops" required>
+      <input type="text" class="input-field" placeholder="Name of fertilizer applied if any">
+      <input type="file" class="input-field" placeholder="Upload an infected leave of the plant" required>
+      <textarea id="message" name="message" placeholder="Further explanation..."></textarea>
+      <button type="submit" class="submit-btn">Diagnose Plant Disease</button>
+  </form>
+  </div>
+
+</body>
+</html>

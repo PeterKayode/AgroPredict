@@ -1,0 +1,177 @@
+*{
+	margin: 0;
+	padding: 0;
+	}
+	body{
+		background-position: center;
+		background-size: cover;
+		font-family: sans-serif;
+		margin-top: 20px;
+		}
+
+	h1{
+		color: #FFFFFF;
+		text-align: center;
+
+	}	
+	.main{
+			background-color: rgb(1, 0, 0, 0.7);
+			width: 550px;
+			margin: auto;
+			border-radius: 15px;
+			padding-top: 7px;
+			animation: slideIn 1s ease-out;
+		}
+		form{
+			padding: 10px;
+		}
+	.name{
+		margin-left: 90px;
+		margin-top: 10px;
+		width: 125px;
+		color: white;
+		font-size: 15px;
+		font-weight: 700;
+		
+	}
+	.all{
+		position: relative;
+		left: 200px;
+		top: -20px;
+		line-height: 25px;
+		border-radius: 6px;
+		padding: 0 12px;
+		font-size: 12px;
+		width: 182px
+	}
+	button{
+		background-color: #00FF00;
+		display: block;
+		margin: 0px 0px 0px 200px;
+		text-align: center;
+		border-radius: 12px;
+		border: 1px;
+		padding: 10px 11px;
+		outline: none;
+		color: white;
+		cursor: pointer;
+		transition: 0.25px;
+		font-size: 15px;
+	}
+	button:hover{
+		background-color: #5390F5;
+	}
+
+	  ul{
+		list-style-type: none;
+		overflow: hidden;
+		margin-top: 15px;
+		margin-right: 100px;
+		animation: slideIn2 1s ease-out;
+	}
+	.navigation li{
+		float: right;
+	}
+	.navigation li a{
+		padding: 10px;
+		font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+		font-size: 15px;
+		font-weight: bold;
+		text-decoration: none;
+		color: black;
+		text-align: center;
+		display: block;
+		background-color: #00FF00;
+		border-radius: 9px;
+		margin-left: 10px;
+	}
+	.navigation a:hover{
+		border: 2px solid white;
+		background-color: #00FF00;
+		font-family: sans-serif;
+		font-weight: bold;
+		font-size: 11pt;
+		border-radius: 9px;
+	}
+
+	.sidebar {
+		height: 100%;
+		width: 0;
+		position: fixed;
+		z-index: 1;
+		top: 0;
+		left: 0;
+		background-color: #111;
+		overflow-x: hidden;
+		transition: 0.5s;
+		padding-top: 20px;
+	  }
+	  
+	  .sidebar a {
+		padding: 7px 8px 7px 32px;
+		text-decoration: none;
+		font-size: 12px;
+		font-weight: bold;
+		color: white;
+		display: block;
+		transition: 0.4s;
+	  }
+	  
+	  .sidebar a:hover {
+		color: #00FF00;
+	  }
+	  
+	  .sidebar .closebtn {
+		position: absolute;
+		top: 0;
+		right: 25px;
+		font-size: 30px;
+		margin-left: 50px;
+	  }
+	  
+	  .openbtn {
+		font-size: 15px;
+		font-weight: bold;
+		cursor: pointer;
+		background-color: #00FF00;
+		color: black;
+		padding: 8px 12px;
+		border: none;
+		position: absolute;
+		margin-left: 12px;
+		margin-top: 0px;
+		animation: slideIn 1s ease-out;
+		
+	  }
+	  
+	  .openbtn:hover {
+		background-color: #00FF00;
+		border: 2px solid white;
+	  }
+	  
+	  #main {
+		transition: margin-left .5s;
+		padding: 0px 0px 16px 16px;
+	  }
+	  
+	  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+	  @media screen and (max-height: 450px) {
+		.sidebar {padding-top: 15px;}
+		.sidebar a {font-size: 18px;}
+	  }
+	  @keyframes slideIn {
+		from {
+		  transform: translateX(-100%);
+		}
+		to {
+		  transform: translateX(0);
+		}
+	  }
+	  @keyframes slideIn2 {
+		from {
+		  transform: translateX(100%);
+		}
+		to {
+		  transform: translateX(0);
+		}
+	  }

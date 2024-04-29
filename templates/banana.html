@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>AgroPredict - Banana</title>
+		<link rel="stylesheet" type = "text/css" href="{{ url_for('static', filename='styles/hacksoil2.css') }}">
+	</head>
+
+	<body background = "{{ url_for("static", filename = "images/banana.jpg")}}">
+		<div class="navigation">
+			<ul>
+				<li><a style = "text-decoration:none; color:white;" href="{{ url_for('croppred')}}">Predict Crop </a></li>
+				<li><a style = "text-decoration:none; color:white;" href="{{ url_for('transit')}}">Home </a></li>
+			</ul>
+		</div>
+
+		<div id="mySidebar" class="sidebar">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+			<a href="{{ url_for('apple')}}"> Apple</a>
+			<a href="{{ url_for('banana')}}"> Banana</a>
+			<a href="{{ url_for('black')}}"> Black Gram</a>
+			<a href="{{ url_for('chickpea')}}"> Chickpea</a>
+			<a href="{{ url_for('coconut')}}"> Coconut</a>
+			<a href="{{ url_for('coffee')}}"> Coffee</a>
+			<a href="{{ url_for('cotton')}}"> Cotton</a>
+			<a href="{{ url_for('grapes')}}"> Grapes</a>
+			<a href="{{ url_for('jute')}}"> Jute</a>
+			<a href="{{ url_for('kidney')}}"> Kidney Beans</a>
+			<a href="{{ url_for('lentil')}}"> Lentil</a>
+			<a href="{{ url_for('maize')}}"> Maize</a>
+			<a href="{{ url_for('mango')}}"> Mango</a>
+			<a href="{{ url_for('moth')}}"> Moth Beans</a>
+			<a href="{{ url_for('mung')}}"> Mung Beans</a>
+			<a href="{{ url_for('musk')}}"> Muskmelon</a>
+			<a href="{{ url_for('orange')}}"> Orange</a>
+			<a href="{{ url_for('pawpaw')}}"> Pawpaw</a>
+			<a href="{{ url_for('pigeon')}}"> Pigeon Pea</a>
+			<a href="{{ url_for('pome')}}"> Pomegranate</a>
+			<a href="{{ url_for('rice')}}"> Rice</a>
+			<a href="{{ url_for('water')}}"> Watermelon</a>
+		  </div>
+		  <div id="main">
+			<button class="openbtn" onclick="openNav()">☰ Check Crops</button>  
+		  </div>
+						
+        <div class="part1">
+			<div class = "main">
+				<h1> Banana </h1>
+				<table>
+					<div id = "name">
+						<tr> 
+							<td  style = "width: 250px"><h2 class = "name">Nitrogen value: </h2></td>
+							<td class = "name"> 100.23</td>
+						
+						</tr>
+						<tr> 
+							<td><h2 class = "name">Phosphorus value: </h2></td>
+							<td class = "name">82.01</td>
+						</tr>
+						<tr> 
+							<td><h2 class = "name">Potassium value: </h2></td>
+							<td class = "name">50.05</td>
+						</tr>
+						<tr> 
+							<td><h2 class = "name">Soil Temperature: </h2></td>
+							<td class = "name">27.3767983057 ℃</td>
+						</tr>
+						<tr> 
+							<td><h2 class = "name"> Soil Humidity: </h2></td>
+							<td class = "name"> 80.3581225811 mmHg</td>
+						</tr>
+						<tr> 
+							<td><h2 class = "name"> Soil pH value: </h2></td>
+							<td class = "name">5.98389318024</td>
+						</tr>
+						<tr> 
+							<td><h2 class = "name"> Average Rainfall: </h2></td>
+							<td class = "name">104.6269804001 mm</td>
+						</tr>
+					</div>
+				</table>
+			</div>
+		</div>
+		<div class="part2">
+			<div class="main2">
+				<strong>Botanical Information:</strong><br>
+				Scientific Name: Musa<br>
+				Family: Musaceae <br>
+				Genus: Musa<br><br>
+				<strong>Growth and Appearance</strong><br>
+				Banana plants are herbaceous and grow to varying heights. They produce large leaves and inflorescences.<br><br>
+	
+				<strong>Flowering and Fruiting</strong><br>
+				Banana plants flower and produce bunches of bananas after the flowering stage. Common varieties include Cavendish and Lady Finger.<br><br>
+	
+				<strong>Cultivation</strong><br>
+				Banana plants thrive in tropical climates and are cultivated globally. They require warm temperatures for optimal growth and fruiting.<br><br>
+	
+				<strong>Varieties</strong><br>
+				There are numerous banana varieties, each with its unique characteristics. Common varieties include Cavendish, Lady Finger, and more.<br><br>
+	
+				<strong>Culinary Uses</strong><br>
+				Bananas are consumed fresh and are a versatile ingredient in cooking and baking. They are used in a variety of dishes and desserts.<br><br>
+	
+				<strong>Health Benefits</strong><br>
+				Bananas offer dietary fiber, vitamins, and minerals, contributing to overall health. They are often associated with digestive health and energy.
+	
+			</div>
+		</div>
+		<script>
+			function openNav() {
+			  document.getElementById("mySidebar").style.width = "250px";
+			  document.getElementById("main").style.marginLeft = "250px";
+			}
+			
+			function closeNav() {
+			  document.getElementById("mySidebar").style.width = "0";
+			  document.getElementById("main").style.marginLeft= "0";
+			}
+			</script>
+
+	</body>
+
+</html>

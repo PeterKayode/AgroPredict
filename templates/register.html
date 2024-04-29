@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - AgroPredict</title>
+    <link rel="stylesheet" type = "text/css" href="{{ url_for('static', filename='styles/register.css') }}">
+
+</head>
+<body background = "{{ url_for("static", filename = "images/agric2.jpg")}}">
+    <div class="navigation">
+        <ul>
+            <li><a style = "text-decoration:none; color:white;" href="{{ url_for('about')}}">About </a></li>
+            <li><a style = "text-decoration:none; color:white;" href="{{ url_for('home')}}">Home </a></li>
+        </ul>
+    </div>
+    
+    <div class="hero">
+        <div class="formbox">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+                <button type="button" class="toggle-btn" onclick="register()">Register</button>
+            </div>
+            <div class="social-icons">
+                <img src="{{url_for('static', filename='images/facebook1.png')}}" alt="facebook icon">
+                <img src="{{url_for('static', filename='images/google1.png')}}" alt="google icon">
+                <img src="{{url_for('static', filename='images/twitter1.png')}}" alt="twitter icon">
+
+            </div>
+            <form id="login" class="input-group">
+                <input type="text" class="input-field" placeholder="User Id" required>
+                <input type="password" class="input-field" placeholder="Enter Password" required>
+                <input type="checkbox" class="check-box"><span>Remember Password</span>
+                <button class = "submit-btn"> <a style = "text-decoration:none;" href="{{ url_for('transit')}}">Login </a></button>
+            </form>
+            <form id="register" class="input-group">
+                <input type="text" class="input-field" placeholder="User Id" required>
+                <input type="email" class="input-field" placeholder="Email Id" required>
+                <input type="password" class="input-field" placeholder="Enter Password" required>
+                <input type="checkbox" class="check-box"><span>I Agree to the Terms and Conditions</span>
+                <button class = "submit-btn"> <a style = "text-decoration:none;" href="{{ url_for('register')}}">Register </a></button>
+
+
+            </form>
+        </div>
+    </div>
+
+
+    <script>
+        var x = document.getElementById("login");
+        var y = document.getElementById("register");
+        var z = document.getElementById("btn");
+
+        function register(){
+            x.style.left= "-400px";
+            y.style.left= "50px";
+            z.style.left= "110px";
+        }
+        function login(){
+            x.style.left= "50px";
+            y.style.left= "450px";
+            z.style.left= "0px";
+        }
+
+    </script>
+</body>
+</html>

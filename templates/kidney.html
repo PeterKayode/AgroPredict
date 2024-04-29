@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>AgroPredict - Kidney Pea</title>
+		<link rel="stylesheet" type = "text/css" href="{{ url_for('static', filename='styles/hacksoil2.css') }}">
+	</head>
+
+	<body background = "{{ url_for("static", filename = "images/kidney.jpg")}}">
+		<div class="navigation">
+			<ul>
+				<li><a style = "text-decoration:none; color:white;" href="{{ url_for('croppred')}}">Predict Crop </a></li>
+				<li><a style = "text-decoration:none; color:white;" href="{{ url_for('transit')}}">Home </a></li>
+			</ul>
+		</div>			
+        <div id="mySidebar" class="sidebar">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+			<a href="{{ url_for('apple')}}"> Apple</a>
+			<a href="{{ url_for('banana')}}"> Banana</a>
+			<a href="{{ url_for('black')}}"> Black Gram</a>
+			<a href="{{ url_for('chickpea')}}"> Chickpea</a>
+			<a href="{{ url_for('coconut')}}"> Coconut</a>
+			<a href="{{ url_for('coffee')}}"> Coffee</a>
+			<a href="{{ url_for('cotton')}}"> Cotton</a>
+			<a href="{{ url_for('grapes')}}"> Grapes</a>
+			<a href="{{ url_for('jute')}}"> Jute</a>
+			<a href="{{ url_for('kidney')}}"> Kidney Beans</a>
+			<a href="{{ url_for('lentil')}}"> Lentil</a>
+			<a href="{{ url_for('maize')}}"> Maize</a>
+			<a href="{{ url_for('mango')}}"> Mango</a>
+			<a href="{{ url_for('moth')}}"> Moth Beans</a>
+			<a href="{{ url_for('mung')}}"> Mung Beans</a>
+			<a href="{{ url_for('musk')}}"> Muskmelon</a>
+			<a href="{{ url_for('orange')}}"> Orange</a>
+			<a href="{{ url_for('pawpaw')}}"> Pawpaw</a>
+			<a href="{{ url_for('pigeon')}}"> Pigeon Pea</a>
+			<a href="{{ url_for('pome')}}"> Pomegranate</a>
+			<a href="{{ url_for('rice')}}"> Rice</a>
+			<a href="{{ url_for('water')}}"> Watermelon</a>
+		  </div>
+		  <div id="main">
+			<button class="openbtn" onclick="openNav()">☰ Check Crops</button>  
+		  </div>
+		
+		<div class="part1">
+			  <div class = "main">
+			<h1> Kidney Pea </h1>
+			<table>
+				<div id = "name">
+					<tr> 
+						<td  style = "width: 250px"><h2 class = "name">Nitrogen value: </h2></td>
+						<td class = "name">20.75</td>
+					
+					</tr>
+					<tr> 
+						<td><h2 class = "name">Phosphorus value: </h2></td>
+						<td class = "name">67.54</td>
+					</tr>
+					<tr> 
+						<td><h2 class = "name">Potassium value: </h2></td>
+						<td class = "name">20.05</td>
+					</tr>
+					<tr> 
+						<td><h2 class = "name">Soil Temperature: </h2></td>
+						<td class = "name">20.1150846851 ℃</td>
+					</tr>
+					<tr> 
+						<td><h2 class = "name"> Soil Humidity: </h2></td>
+						<td class = "name"> 21.6053567295 mmHg</td>
+					</tr>
+					<tr> 
+						<td><h2 class = "name"> Soil pH value: </h2></td>
+						<td class = "name">5.74941058587</td>
+					</tr>
+					<tr> 
+						<td><h2 class = "name"> Average Rainfall: </h2></td>
+						<td class = "name">105.91977754210001 mm</td>
+					</tr>
+				</div>
+			</table>
+		</div>
+	</div>
+		<div class="part2">
+			<div class="main2">
+								
+				<strong>Botanical Information:</strong><br>
+				Scientific Name: Phaseolus vulgaris<br>
+				Family: Fabaceae<br>
+				Genus: Phaseolus<br><br>
+
+				<strong>Growth and Appearance</strong><br>
+				Kidney bean plants are annuals with a bushy growth habit, typically reaching a height of about 18 to 24 inches. They have compound leaves with three leaflets and produce kidney-shaped pods that contain beans.<br><br>
+	
+				<strong>Flowering and Fruiting</strong><br>
+				Kidney bean plants produce small, white to violet flowers that develop into pods containing mature kidney beans. The beans are typically harvested when the pods dry.<br><br>
+	
+				<strong>Cultivation</strong><br>
+				Kidney beans are cultivated globally and are an essential part of many cuisines. They require well-drained soil and sufficient sunlight. Kidney beans are grown for both their nutritious beans and as a nitrogen-fixing crop.<br><br>
+	
+				<strong>Varieties</strong><br>
+				There are various varieties of kidney beans, each with its unique characteristics. Common types are red kidney beans, white kidney beans, and speckled kidney beans.<br><br>
+	
+				<strong>Culinary Uses</strong><br>
+				Kidney beans are a staple in many dishes worldwide. They are used in soups, stews, salads, and as a side dish. Kidney beans are a good source of protein, fiber, and essential nutrients.<br><br>
+	
+				<strong>Health Benefits</strong><br>
+				Kidney beans are nutritious and provide protein, fiber, vitamins, and minerals. They are associated with various health benefits, including heart health, weight management, and blood sugar control.
+	
+	
+				
+			</div>
+		</div>
+		<script>
+			function openNav() {
+			  document.getElementById("mySidebar").style.width = "250px";
+			  document.getElementById("main").style.marginLeft = "250px";
+			}
+			
+			function closeNav() {
+			  document.getElementById("mySidebar").style.width = "0";
+			  document.getElementById("main").style.marginLeft= "0";
+			}
+			</script>
+			</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type = "text/css" href="{{ url_for('static', filename='styles/chatus.css') }}">
+  <title>Chat - AgroPredict</title>
+</head>
+<body background = "{{ url_for("static", filename = "images/chatback.jpeg")}}">
+  <div class="navigation">
+    <ul>
+      <li><a style = "text-decoration:none; color:black;" href="{{ url_for('register')}}">Logout </a></li>
+      <li><a style = "text-decoration:none; color:black;" href="{{ url_for('about')}}">About </a></li>
+      <li><a style = "text-decoration:none; color:black;" href="{{ url_for('transit')}}">Home </a></li>
+    </ul>
+  </div>
+
+  <div class="container">
+    <img src="{{ url_for('static', filename='images/chatus.png') }}" alt="Chat us">
+
+    <form id="register" class="input-group">
+      <input type="text" class="input-field" placeholder="Full name" required>
+      <input type="email" class="input-field" placeholder="Email Address" required>
+      <textarea id="message" name="message" placeholder="Type your message here..."></textarea>
+      <input type="file" class="input-field" placeholder="Upload an file if needed">
+      <button type="submit" class="submit-btn">Send Message</button>
+  </form>
+  </div>
+
+</body>
+</html>

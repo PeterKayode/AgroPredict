@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>AgroPredict - Mung Beans</title>
+		<link rel="stylesheet" type = "text/css" href="{{ url_for('static', filename='styles/hacksoil2.css') }}">
+	</head>
+
+	<body background = "{{ url_for("static", filename = "images/mung.jpg")}}">
+		<div class="navigation">
+			<ul>
+				<li><a style = "text-decoration:none; color:white;" href="{{ url_for('croppred')}}">Predict Crop </a></li>
+				<li><a style = "text-decoration:none; color:white;" href="{{ url_for('transit')}}">Home </a></li>
+			</ul>
+		</div>			
+		<div id="mySidebar" class="sidebar">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+			<a href="{{ url_for('apple')}}"> Apple</a>
+			<a href="{{ url_for('banana')}}"> Banana</a>
+			<a href="{{ url_for('black')}}"> Black Gram</a>
+			<a href="{{ url_for('chickpea')}}"> Chickpea</a>
+			<a href="{{ url_for('coconut')}}"> Coconut</a>
+			<a href="{{ url_for('coffee')}}"> Coffee</a>
+			<a href="{{ url_for('cotton')}}"> Cotton</a>
+			<a href="{{ url_for('grapes')}}"> Grapes</a>
+			<a href="{{ url_for('jute')}}"> Jute</a>
+			<a href="{{ url_for('kidney')}}"> Kidney Beans</a>
+			<a href="{{ url_for('lentil')}}"> Lentil</a>
+			<a href="{{ url_for('maize')}}"> Maize</a>
+			<a href="{{ url_for('mango')}}"> Mango</a>
+			<a href="{{ url_for('moth')}}"> Moth Beans</a>
+			<a href="{{ url_for('mung')}}"> Mung Beans</a>
+			<a href="{{ url_for('musk')}}"> Muskmelon</a>
+			<a href="{{ url_for('orange')}}"> Orange</a>
+			<a href="{{ url_for('pawpaw')}}"> Pawpaw</a>
+			<a href="{{ url_for('pigeon')}}"> Pigeon Pea</a>
+			<a href="{{ url_for('pome')}}"> Pomegranate</a>
+			<a href="{{ url_for('rice')}}"> Rice</a>
+			<a href="{{ url_for('water')}}"> Watermelon</a>
+		  </div>
+		  <div id="main">
+			<button class="openbtn" onclick="openNav()">☰ Check Crops</button>  
+		  </div>
+        
+
+		<div class="part1">
+			<div class = "main">
+			<h1> Mung Beans </h1>
+			<table>
+				<div id = "name">
+					<tr> 
+						<td  style = "width: 250px"><h2 class = "name">Nitrogen value: </h2></td>
+						<td class = "name"> 20.99</td>
+					
+					</tr>
+					<tr> 
+						<td><h2 class = "name">Phosphorus value: </h2></td>
+						<td class = "name">47.28</td>
+					</tr>
+					<tr> 
+						<td><h2 class = "name">Potassium value: </h2></td>
+						<td class = "name">19.87</td>
+					</tr>
+					<tr> 
+						<td><h2 class = "name">Soil Temperature: </h2></td>
+						<td class = "name">28.5257747353 ℃</td>
+					</tr>
+					<tr> 
+						<td><h2 class = "name"> Soil Humidity: </h2></td>
+						<td class = "name"> 85.49997454300001 mmHg</td>
+					</tr>
+					<tr> 
+						<td><h2 class = "name"> Soil pH value: </h2></td>
+						<td class = "name">6.72395694037</td>
+					</tr>
+					<tr> 
+						<td><h2 class = "name"> Average Rainfall: </h2></td>
+						<td class = "name">48.4036009029 mm</td>
+					</tr>
+				</div>
+			</table>
+		</div>
+	</div>
+		<div class="part2">
+			<div class="main2">
+								
+				<strong>Botanical Information:</strong><br>
+				Scientific Name: Vigna radiata<br>
+				Family: Fabaceae<br>
+				Genus: Vigna<br><br>
+
+				<strong>Growth and Appearance</strong><br>
+				Mung beans are annual legumes with a climbing or bushy growth habit, reaching a height of about 2 to 4 feet. They produce compound leaves with three leaflets and clusters of small, green pods containing cylindrical-shaped beans.<br><br>
+	
+				<strong>Flowering and Fruiting</strong><br>
+				Mung bean plants produce small, yellow flowers that develop into pods. The pods contain small, rounded, green beans, which are the edible seeds. Mung beans are known for their short growing season and adaptability to various climates.<br><br>
+	
+				<strong>Cultivation</strong><br>
+				Mung beans are cultivated in various regions worldwide. They thrive in well-drained soil and warm temperatures. <br><br>
+	
+				<strong>Culinary Uses</strong><br>
+				Mung beans are a versatile ingredient used in a variety of culinary dishes. They are commonly used in salads, stir-fries, soups, and desserts. Mung bean sprouts are also popular in salads and sandwiches.<br><br>
+	
+				<strong>Nutritional Benefits</strong><br>
+				Mung beans are a rich source of protein, fiber, vitamins, and minerals. They are considered a nutritious addition to a balanced diet and are often used in vegetarian and vegan recipes.<br><br>
+	
+				<strong>Commercial Importance</strong><br>
+				Mung beans have commercial significance as a food crop and are exported and consumed globally. They are valued for their nutritional content, versatility, and contribution to various culinary traditions.
+	
+	
+				
+			</div>
+		</div>
+		<script>
+			function openNav() {
+			  document.getElementById("mySidebar").style.width = "250px";
+			  document.getElementById("main").style.marginLeft = "250px";
+			}
+			
+			function closeNav() {
+			  document.getElementById("mySidebar").style.width = "0";
+			  document.getElementById("main").style.marginLeft= "0";
+			}
+			</script>
+			</body>
+
+</html>

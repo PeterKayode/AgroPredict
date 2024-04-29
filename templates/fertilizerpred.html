@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type = "text/css" href="{{ url_for('static', filename='styles/fertilizerpred.css') }}">
+  <title>Fertilizer - AgroPredict</title>
+</head>
+<body background = "{{ url_for("static", filename = "images/Agric_2.jpeg")}}">
+  <div class="navigation">
+    <ul>
+      <li><a style = "text-decoration:none; color:black;" href="{{ url_for('register')}}">Logout </a></li>
+      <li><a style = "text-decoration:none; color:black;" href="{{ url_for('about')}}">About </a></li>
+      <li><a style = "text-decoration:none; color:black;" href="{{ url_for('transit')}}">Home </a></li>
+    </ul>
+  </div>
+
+  <div class="container">
+    <img src="{{ url_for('static', filename='images/Agric_2.jpeg') }}" alt="Chat us">
+
+    <form id="register" class="input-group">
+      <input type="text" class="input-field" placeholder="Name of Plant" required>
+      <input type="text" class="input-field" placeholder="Previous fertilizer applications" required>
+      <input type="text" class="input-field" placeholder="Crop growth stage" required>
+      <input type="text" class="input-field" placeholder="Environmental conditions" required>
+      <input type="text" class="input-field" placeholder="Pest and disease history" required>
+      <textarea id="message" name="message" placeholder="Further explanation..."></textarea>
+      <button type="submit" class="submit-btn">Recommend Fertilizer</button>
+  </form>
+  </div>
+
+</body>
+</html>

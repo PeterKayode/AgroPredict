@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>AgroPredict - Jute</title>
+		<link rel="stylesheet" type = "text/css" href="{{ url_for('static', filename='styles/hacksoil2.css') }}">
+	</head>
+
+	<body background = "{{ url_for("static", filename = "images/jute.webp")}}">
+		<div class="navigation">
+			<ul>
+				<li><a style = "text-decoration:none; color:white;" href="{{ url_for('croppred')}}">Predict Crop </a></li>
+				<li><a style = "text-decoration:none; color:white;" href="{{ url_for('transit')}}">Home </a></li>
+			</ul>
+		</div>			
+        <div id="mySidebar" class="sidebar">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+			<a href="{{ url_for('apple')}}"> Apple</a>
+			<a href="{{ url_for('banana')}}"> Banana</a>
+			<a href="{{ url_for('black')}}"> Black Gram</a>
+			<a href="{{ url_for('chickpea')}}"> Chickpea</a>
+			<a href="{{ url_for('coconut')}}"> Coconut</a>
+			<a href="{{ url_for('coffee')}}"> Coffee</a>
+			<a href="{{ url_for('cotton')}}"> Cotton</a>
+			<a href="{{ url_for('grapes')}}"> Grapes</a>
+			<a href="{{ url_for('jute')}}"> Jute</a>
+			<a href="{{ url_for('kidney')}}"> Kidney Beans</a>
+			<a href="{{ url_for('lentil')}}"> Lentil</a>
+			<a href="{{ url_for('maize')}}"> Maize</a>
+			<a href="{{ url_for('mango')}}"> Mango</a>
+			<a href="{{ url_for('moth')}}"> Moth Beans</a>
+			<a href="{{ url_for('mung')}}"> Mung Beans</a>
+			<a href="{{ url_for('musk')}}"> Muskmelon</a>
+			<a href="{{ url_for('orange')}}"> Orange</a>
+			<a href="{{ url_for('pawpaw')}}"> Pawpaw</a>
+			<a href="{{ url_for('pigeon')}}"> Pigeon Pea</a>
+			<a href="{{ url_for('pome')}}"> Pomegranate</a>
+			<a href="{{ url_for('rice')}}"> Rice</a>
+			<a href="{{ url_for('water')}}"> Watermelon</a>
+		  </div>
+		  <div id="main">
+			<button class="openbtn" onclick="openNav()">☰ Check Crops</button>  
+		  </div>
+
+		<div class="part1">
+			<div class = "main">
+			<h1> Jute </h1>
+			<table>
+				<div id = "name">
+					<tr> 
+						<td  style = "width: 250px"><h2 class = "name">Nitrogen value: </h2></td>
+						<td class = "name"> 78.4</td>
+					
+					</tr>
+					<tr> 
+						<td><h2 class = "name">Phosphorus value: </h2></td>
+						<td class = "name">46.86</td>
+					</tr>
+					<tr> 
+						<td><h2 class = "name">Potassium value: </h2></td>
+						<td class = "name">39.99</td>
+					</tr>
+					<tr> 
+						<td><h2 class = "name">Soil Temperature: </h2></td>
+						<td class = "name">24.9583758265 ℃</td>
+					</tr>
+					<tr> 
+						<td><h2 class = "name"> Soil Humidity: </h2></td>
+						<td class = "name"> 79.6398642063 mmHg</td>
+					</tr>
+					<tr> 
+						<td><h2 class = "name"> Soil pH value: </h2></td>
+						<td class = "name">6.73277756817</td>
+					</tr>
+					<tr> 
+						<td><h2 class = "name"> Average Rainfall: </h2></td>
+						<td class = "name">174.792797536 mm</td>
+					</tr>
+				</div>
+			</table>
+		</div>
+	</div>
+		<div class="part2">
+			<div class="main2">
+								
+				<strong>Botanical Information:</strong><br>
+				Scientific Name: Corchorus<br>
+				Family: Malvaceae<br>
+				Genus: Corchorus<br><br>
+
+				<strong>Growth and Appearance</strong><br>
+				Jute plants are annuals with a height ranging from 6 to 12 feet. They have slender, cylindrical stems and large, coarse-textured leaves. Jute fibers are obtained from the outer bast layer of the plant.<br><br>
+	
+				<strong>Flowering and Fruiting</strong><br>
+				Jute plants produce small yellow flowers with five petals. The fruit is a capsule containing seeds. However, the primary economic value lies in the long, soft fibers found in the stem's bast layer.<br><br>
+	
+				<strong>Cultivation</strong><br>
+				Jute is cultivated in tropical regions with well-drained soil. It requires warm temperatures and high humidity for optimal growth. The plant is usually ready for harvest within 120 to 150 days after sowing.<br><br>
+	
+				<strong>Types of Jute</strong><br>
+				There are two main types of jute: White Jute (Corchorus capsularis) and Tossa Jute (Corchorus olitorius). Each type has specific fiber characteristics and uses.<br><br>
+	
+				<strong>Uses</strong><br>
+				Jute fibers are primarily used to make burlap, hessian, and gunny cloth. These materials are commonly employed for packaging, textiles, and various industrial applications. Jute is an eco-friendly and biodegradable fiber.<br><br>
+	
+				<strong>Commercial Importance</strong><br>
+				Jute has economic importance, particularly in the textile industry. It is a versatile and sustainable fiber, contributing to various products and industries globally.
+	
+	
+				
+			</div>
+		</div>
+		<script>
+			function openNav() {
+			  document.getElementById("mySidebar").style.width = "250px";
+			  document.getElementById("main").style.marginLeft = "250px";
+			}
+			
+			function closeNav() {
+			  document.getElementById("mySidebar").style.width = "0";
+			  document.getElementById("main").style.marginLeft= "0";
+			}
+			</script>
+			</body>
+
+</html>

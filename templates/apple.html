@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>AgroPredict - Apple</title>
+		<link rel="stylesheet" type = "text/css" href="{{ url_for('static', filename='styles/hacksoil2.css') }}">
+	</head>
+
+	<body background = "{{ url_for("static", filename = "images/apple.jpg")}}">
+		<div class="navigation">
+			<ul>
+				<li><a style = "text-decoration:none; color:white;" href="{{ url_for('croppred')}}">Predict Crop </a></li>
+				<li><a style = "text-decoration:none; color:white;" href="{{ url_for('transit')}}">Home </a></li>
+			</ul>
+		</div>
+
+		<div id="mySidebar" class="sidebar">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+			<a href="{{ url_for('apple')}}"> Apple</a>
+			<a href="{{ url_for('banana')}}"> Banana</a>
+			<a href="{{ url_for('black')}}"> Black Gram</a>
+			<a href="{{ url_for('chickpea')}}"> Chickpea</a>
+			<a href="{{ url_for('coconut')}}"> Coconut</a>
+			<a href="{{ url_for('coffee')}}"> Coffee</a>
+			<a href="{{ url_for('cotton')}}"> Cotton</a>
+			<a href="{{ url_for('grapes')}}"> Grapes</a>
+			<a href="{{ url_for('jute')}}"> Jute</a>
+			<a href="{{ url_for('kidney')}}"> Kidney Beans</a>
+			<a href="{{ url_for('lentil')}}"> Lentil</a>
+			<a href="{{ url_for('maize')}}"> Maize</a>
+			<a href="{{ url_for('mango')}}"> Mango</a>
+			<a href="{{ url_for('moth')}}"> Moth Beans</a>
+			<a href="{{ url_for('mung')}}"> Mung Beans</a>
+			<a href="{{ url_for('musk')}}"> Muskmelon</a>
+			<a href="{{ url_for('orange')}}"> Orange</a>
+			<a href="{{ url_for('pawpaw')}}"> Pawpaw</a>
+			<a href="{{ url_for('pigeon')}}"> Pigeon Pea</a>
+			<a href="{{ url_for('pome')}}"> Pomegranate</a>
+			<a href="{{ url_for('rice')}}"> Rice</a>
+			<a href="{{ url_for('water')}}"> Watermelon</a>
+		  </div>
+		  <div id="main">
+			<button class="openbtn" onclick="openNav()">☰ Check Crops</button>  
+		  </div>
+						
+        <div class="part1">
+			<div class = "main">
+				<h1> Apple </h1>
+				<table>
+					<div id = "name">
+						<tr> 
+							<td  style = "width: 250px"><h2 class = "name">Nitrogen value: </h2></td>
+							<td class = "name"> 20.8</td>
+						
+						</tr>
+						<tr> 
+							<td><h2 class = "name">Phosphorus value: </h2></td>
+							<td class = "name">134.22</td>
+						</tr>
+						<tr> 
+							<td><h2 class = "name">Potassium value: </h2></td>
+							<td class = "name">199.89</td>
+						</tr>
+						<tr> 
+							<td><h2 class = "name">Soil Temperature: </h2></td>
+							<td class = "name">22.6309424132 ℃</td>
+						</tr>
+						<tr> 
+							<td><h2 class = "name"> Soil Humidity: </h2></td>
+							<td class = "name"> 92.3333828756 mmHg</td>
+						</tr>
+						<tr> 
+							<td><h2 class = "name"> Soil pH value: </h2></td>
+							<td class = "name">5.92966293181</td>
+						</tr>
+						<tr> 
+							<td><h2 class = "name"> Average Rainfall: </h2></td>
+							<td class = "name">112.654779275 mm</td>
+						</tr>
+					</div>
+				</table>
+			</div>
+		</div>
+
+		<div class="part2">
+			<div class="main2">
+								
+				<strong>Botanical Information:</strong><br>
+				Scientific Name: Malus domestica<br>
+				Family: Rosaceae <br>
+				Genus: Malus<br><br>
+
+				<strong>Growth and Appearance</strong><br>
+				Apple trees are deciduous, meaning they lose their leaves in the fall.
+				They typically reach a height of 6 to 15 feet, although some varieties can grow taller.
+				The leaves are arranged alternately and have a serrated margin.<br><br>
+
+				<strong>Flowering and Fruiting</strong><br>
+				Apple trees produce beautiful flowers in the spring, usually ranging from white to pink.
+				The fruit, apples, develops from the pollinated flowers and is usually ready for harvest in the fall.
+				Apples come in various colors, sizes, and flavors, depending on the apple variety.<br><br>
+
+				<strong>Cultivation</strong><br>
+				Apples are grown in orchards worldwide and are an essential fruit crop.
+				They require a period of winter chill to break dormancy and set fruit.
+				Proper pruning and care are essential for a healthy and productive apple tree.<br><br>
+
+				<strong>Varieties</strong><br>
+				There are numerous apple varieties, each with its unique characteristics.
+				Common varieties include Gala, Granny Smith, Red Delicious, Fuji, and many more.<br><br>
+
+				<strong>Culinary Uses</strong><br>
+				Apples are versatile and used in various culinary applications.
+				They can be eaten fresh, used in cooking, juiced, or processed into products like applesauce and cider.<br><br>
+
+				<strong>Health Benefits</strong><br>
+				Apples are a good source of dietary fiber, vitamins, and antioxidants.
+				They are often associated with various health benefits, including heart health and weight management.
+				
+			</div>
+		</div>
+		<script>
+			function openNav() {
+			  document.getElementById("mySidebar").style.width = "250px";
+			  document.getElementById("main").style.marginLeft = "250px";
+			}
+			
+			function closeNav() {
+			  document.getElementById("mySidebar").style.width = "0";
+			  document.getElementById("main").style.marginLeft= "0";
+			}
+			</script>
+		</body>
+
+</html>
