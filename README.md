@@ -20,6 +20,9 @@ AgroPredict's user-centric design ensures accessibility for farmers of all backg
 ## Sustainability and SDG Alignment ♻️
 AgroPredict actively contributes to sustainable development goals (SDGs) by promoting precision agriculture, minimizing crop losses, and fostering innovation in the agricultural industry.
 
-## Collaboration 🤝
-AgroPredict collaborates with professional agricultural institutes to ensure industry standards and exceed the expectations of the agricultural community.
+## Usage
+1. Clone this repository: `git clone https://github.com/PeterKayode/AgroPredict`
+2. Navigate to the project directory: `cd AgroPredict`
+3. Install the required packages: `pip install -r requirements.txt`
+4. Run the development file: `app.py`
 
