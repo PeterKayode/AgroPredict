@@ -1,7 +1,7 @@
 # AgroPredict 🌱
 
 ## Overview 🚀
-AgroPredict is an innovative agricultural solution that leverages machine learning and deep learning algorithms to empower farmers with precise crop recommendations, early disease detection, tailored fertilizer recommendations, and expert consultation. By bridging the gap between traditional farming practices and modern technology, AgroPredict aims to improve food sustainability and promote precision agriculture.
+AgroPredict is an innovative agricultural solution that leverages machine learning and deep learning algorithms to empower farmers with precise crop recommendations, early disease detection, tailored fertilizer recommendations, and expert consultation. By bridging the gap between traditional farming practices and modern technology, AgroPredict aims to improve food sustainability more and promote precision agriculture.
 
 ## Key Features 🔑
 - **Precision Crop Selection**: Provides meticulous crop recommendations based on soil properties and climatic conditions.
